@@ -21,20 +21,14 @@ This tool scrapes job listings from **Perfect Cut Landscaping (561lawn.com)** an
 
 ## Email Notification Setup
 
-To receive email notifications, you need to set up the following environment variables:
+To receive email notifications, you need to configure your credentials:
 
-1.  **EMAIL_SENDER**: The Gmail address you want to send emails *from*.
-2.  **EMAIL_PASSWORD**: An **App Password** for that Gmail account (not your regular password).
-    - Go to [Google Account Security](https://myaccount.google.com/security).
-    - Enable 2-Step Verification.
-    - Search for "App Passwords" and create one for this script.
-
-### Setting Environment Variables (PowerShell)
-
-```powershell
-$env:EMAIL_SENDER = "your_email@gmail.com"
-$env:EMAIL_PASSWORD = "your_app_password"
-```
+1.  **Rename** the file `.env.example` to `.env`.
+2.  **Open** `.env` in a text editor.
+3.  **Fill in** your details:
+    - `EMAIL_SENDER`: Your Gmail address.
+    - `EMAIL_PASSWORD`: Your **App Password** (not your login password).
+      - [Get an App Password here](https://myaccount.google.com/apppasswords).
 
 Then run the script:
 
